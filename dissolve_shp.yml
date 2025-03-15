@@ -1,0 +1,5 @@
+input_shapefile:
+  class: Directory
+  path: input_shapefile
+
+dissolve_field :

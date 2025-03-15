@@ -1,0 +1,10 @@
+python .\dissolve_shp.py "C:/CWL/spatial/Dissolve/input_shapefile/OK_Counties.shp"
+
+docker build -t eforoutan/dissolve_shp:latest .
+
+
+
+docker push eforoutan/dissolve_shp  
+
+cwltool dissolve_shp.cwl dissolve_shp.yml
+
